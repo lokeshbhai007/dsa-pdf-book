@@ -1,4 +1,4 @@
-// src/components/NotesView.js - ENHANCED VERSION
+// src/components/NotesView.js - ENHANCED VERSION (FIXED)
 export default function NotesView({ notes, theme, selectedTopic, selectedSubTopic }) {
   const getTotalQuestions = () => {
     return notes.reduce((total, note) => {
@@ -36,9 +36,9 @@ export default function NotesView({ notes, theme, selectedTopic, selectedSubTopi
             <span>🔍</span>
             <span>
               Filtered by: 
-              {selectedTopic && <span className="font-semibold"> Topic: "{selectedTopic}"</span>}
+              {selectedTopic && <span className="font-semibold"> Topic: &quot;{selectedTopic}&quot;</span>}
               {selectedTopic && selectedSubTopic && <span> → </span>}
-              {selectedSubTopic && <span className="font-semibold"> Sub-topic: "{selectedSubTopic}"</span>}
+              {selectedSubTopic && <span className="font-semibold"> Sub-topic: &quot;{selectedSubTopic}&quot;</span>}
             </span>
             <span className="ml-2 px-2 py-1 bg-blue-200 dark:bg-blue-800 rounded text-blue-900 dark:text-blue-100 font-medium">
               {totalQuestions} result{totalQuestions !== 1 ? 's' : ''}
