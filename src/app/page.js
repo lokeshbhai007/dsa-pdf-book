@@ -174,7 +174,7 @@ export default function Home() {
             {/* Title and Stats */}
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <h1 className="text-2xl font-bold text-primary-600 dark:text-primary-400 hidden lg:flex">
-                DSA Notes
+                PDF Notes
               </h1>
               
               {/* Stats Summary */}
@@ -244,7 +244,7 @@ export default function Home() {
                 <button
                   onClick={exportToPDF}
                   disabled={filteredNotes.length === 0}
-                  className="px-4 py-2 bg-primary-600 cursor-pointer text-white rounded-lg hover:bg-primary-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-medium text-sm"
+                  className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-medium text-sm"
                 >
                   Export PDF
                 </button>
@@ -276,7 +276,7 @@ export default function Home() {
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Form Section */}
           <div className="no-print lg:col-span-1">
