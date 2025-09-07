@@ -6,8 +6,8 @@ export default function ThemeToggle({ theme, setTheme }) {
   const dropdownRef = useRef(null);
 
   const themes = [
-    { id: 'light', name: 'Light Professional', icon: '☀️' },
     { id: 'dark', name: 'Dark Professional', icon: '🌙' },
+    { id: 'light', name: 'Light Professional', icon: '☀️' },
   ];
 
   // Close dropdown when clicking outside

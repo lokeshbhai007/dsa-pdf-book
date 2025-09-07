@@ -75,7 +75,7 @@ export default function NotesView({ notes, theme, selectedTopic, selectedSubTopi
                       <div className="flex items-start gap-3 justify-between">
                         
                         <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-lg">
-                          PS {">>"} {question.title}
+                          PS &gt;&gt; {question.title}
                         </h3>
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-300 shrink-0">
                           {question.id}

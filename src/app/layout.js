@@ -1,14 +1,5 @@
 // src/app/layout.js
 import './globals.css'
-import { JetBrains_Mono } from 'next/font/google'
-
-// Configure the font
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-  variable: '--font-jetbrains-mono',
-})
 
 export const metadata = {
   title: 'DSA Notes - Professional Note Taking',
@@ -21,8 +12,15 @@ export default function RootLayout({ children }) {
       <head>
         {/* Favicon */}
         <link rel="icon" href="/dsa-logo-note.png" type="image/png" />
+        {/* Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" 
+          rel="stylesheet" 
+        />
       </head>
-      <body className={`${jetbrainsMono.variable} antialiased`}>
+      <body className="font-mono antialiased">
         {children}
       </body>
     </html>

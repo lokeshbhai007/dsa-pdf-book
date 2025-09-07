@@ -34,10 +34,9 @@
   font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-
 /* NEW */
 .theme-code {
-  font-family: var(--font-jetbrains-mono), 'Monaco', 'Consolas', monospace;
+  font-family: 'JetBrains Mono', 'Monaco', 'Consolas', monospace;
 }
 
 /* Scroll behavior enhancements */
