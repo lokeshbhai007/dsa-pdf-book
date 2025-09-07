@@ -36,9 +36,9 @@ export default function NotesView({ notes, theme, selectedTopic, selectedSubTopi
             <span>🔍</span>
             <span>
               Filtered by: 
-              {selectedTopic && <span className="font-semibold"> Topic: &quot;{selectedTopic}&quot;</span>}
+              {selectedTopic && <span className="font-semibold"> Topic: {selectedTopic}</span>}
               {selectedTopic && selectedSubTopic && <span> → </span>}
-              {selectedSubTopic && <span className="font-semibold"> Sub-topic: &quot;{selectedSubTopic}&quot;</span>}
+              {selectedSubTopic && <span className="font-semibold"> Sub-topic: {selectedSubTopic}</span>}
             </span>
             <span className="ml-2 px-2 py-1 bg-blue-200 dark:bg-blue-800 rounded text-blue-900 dark:text-blue-100 font-medium">
               {totalQuestions} result{totalQuestions !== 1 ? 's' : ''}
@@ -73,7 +73,6 @@ export default function NotesView({ notes, theme, selectedTopic, selectedSubTopi
                     <div className="space-y-3">
                       {/* Question Title */}
                       <div className="flex items-start gap-3 justify-between">
-                        
                         <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-lg">
                           PS &gt;&gt; {question.title}
                         </h3>
